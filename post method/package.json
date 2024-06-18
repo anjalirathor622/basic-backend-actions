@@ -1,0 +1,23 @@
+{
+  "name": "14july2022-post-method",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./indexjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anjalirathor622/14july2022-post-method.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anjalirathor622/14july2022-post-method/issues"
+  },
+  "homepage": "https://github.com/anjalirathor622/14july2022-post-method#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

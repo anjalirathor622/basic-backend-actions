@@ -1,0 +1,19 @@
+
+const midlew = (req,res,next)=>{
+    
+   next();
+    
+}
+
+//error heandling middleware
+const mwfn =function(err, req, res, next) {
+    
+    console.error(err.stack);
+      
+    res.status(500).send('Something broke!');
+    
+  
+ };
+
+
+ module.exports = {mwfn,midlew};

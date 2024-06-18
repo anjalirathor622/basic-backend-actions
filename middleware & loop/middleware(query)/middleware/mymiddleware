@@ -1,0 +1,28 @@
+// we can store a function inside variable
+const mwfn1=(req, res, next) =>{
+
+    //console.log(req.query)
+    //for in loop
+    /*
+    for (key in object) {
+        // code block to be executed
+    }
+    */
+   let fuldetail = ' ';
+
+    for (k in req.query) {         //for in loop
+
+         //objectName["property"]  
+
+        //console.log(k);
+        //console.log(req.query[k]);
+
+        fuldetail = fuldetail + req.query[k] + ' ' ;
+        //fuldetail += req.query[k] + ' ' ;
+    }
+        req.query = {fuldetail}
+
+       // console.log(fuldetail);
+        next();
+}
+module.exports = {mwfn1};

@@ -1,0 +1,26 @@
+const middlw = (req,res,next)=>{
+
+    //to check method of request
+    console.log(req.method);
+
+     //Conditions
+    /*
+        if (condition) {
+            //  block of code to be executed if the condition is true
+        }
+    */
+    if (req.method === 'GET'){
+
+        console.log('helo');
+        res.json({'msg':'sorry! you get method isn\'t allowed'});
+
+    }else{
+
+    next();
+
+   };
+    
+   
+};
+
+module.exports={middlw};
